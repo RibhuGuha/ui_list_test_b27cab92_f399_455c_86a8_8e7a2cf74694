@@ -1,0 +1,86 @@
+{
+
+"producttypeptype": [
+    {
+        "key": "PtId",
+        "type": "keyid"
+    }
+
+    ,{
+        "key": "ProductTypeName",
+        "label": "ProductTypeName",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ProductTypeDesc",
+        "label": "ProductTypeDesc",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+
+,"product": [
+    {
+        "key": "Product_id",
+        "type": "keyid"
+    }
+            ,{
+            "key": "ProductPType",
+            "uicomponent": "producttypeptype",
+            "nocreate": true
+        }
+
+    ,{
+        "key": "Name",
+        "label": "Name",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Product_description",
+        "label": "Product_description",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Manufacturer",
+        "label": "Manufacturer",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ProductProductVendor",
+        "label": "ProductVendor",
+        "type": "dropdown",
+        "valueId": "SId",
+        "nameId": "SupplierName",
+        "contentId": "SupplierName",
+        "source": "Supplier",
+        "create": true,
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "MainImage",
+        "label": "MainImage",
+        "type": "doc",
+        "accept": ".JPG,.JPEG,.PNG",
+        "width": "30%",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+}
